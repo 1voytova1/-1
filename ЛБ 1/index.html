@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота 1</title>
+</head>
+<body>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0">
+ 
+  <tr>
+    <td colspan="2" align="center">
+      <h1>Навчальний портал</h1>
+      <p>
+        <a href="index.html">Головна</a> |
+        <a href="news.html">Новини</a> |
+        <a href="schedule.html">Розклад</a> |
+        <a href="contacts.html">Контакти</a>
+      </p>
+    </td>
+  </tr>
+
+  <tr valign="top">
+    <td width="30%">
+      <h2>Навігація</h2>
+      <ul>
+        <li><a href="materials.html">Матеріали</a></li>
+        <li><a href="groups.html">Групи</a></li>
+        <li><a href="weather.html">Погода</a></li>
+        <li><a href="search.html">Пошук</a></li>
+      </ul>
+
+      <h3>Зображення</h3>
+      <p>
+        <img src="1.png" alt="Іконка лабораторної роботи" width="220">
+      </p>
+
+      <p>
+        Перехід на іншу сторінку цього ресурсу (відносне посилання):
+        <a href="about.html">Про сайт</a>
+      </p>
+    </td>
+
+    <td width="70%">
+      <h2>Основний контент</h2>
+
+      <h3>Фрагмент оформленого тексту</h3>
+      <p>
+        Хімічна реакція <b>ортофосфорної</b> кислоти:
+        P<sub>2</sub>O<sub>5</sub> + 3H<sub>2</sub>O &rarr; H<sub>3</sub>PO<sub>4</sub>
+      </p>
+      <p>
+        Приклади спеціальних символів через &amp;-сутності:
+        &alpha;, &beta;, &gamma;, стрілка &rarr;, кутові дужки &lt;tag&gt;.
+      </p>
+      <p>
+        Приклад курсиву: <i>ортофосфорна кислота використовується у хімії та харчовій промисловості</i>.
+        Приклад надрядкового: 10<sup>3</sup>.
+        Приклад підрядкового: H<sub>2</sub>O.
+      </p>
+
+      <hr>
+      <h3>Дворівневий список (розподіл груп)</h3>
+      <ol>
+        <li>Спеціальності
+          <ul>
+            <li>СП (Системне програмування)</li>
+            <li>КСМ (Комп’ютерні системи та мережі)</li>
+          </ul>
+        </li>
+        <li>Траєкторії навчання
+          <ul>
+            <li>Перша траєкторія: базова підготовка</li>
+            <li>Друга траєкторія: поглиблена підготовка</li>
+          </ul>
+        </li>
+      </ol>
+
+      <hr>
+
+      <h3>Таблиця з даними прогнозу погоди</h3>
+      <table border="1" cellpadding="6" cellspacing="0" width="100%">
+        <tr>
+          <th>День</th>
+          <th>Місто</th>
+          <th>Температура</th>
+          <th>Опади</th>
+          <th>Вітер</th>
+        </tr>
+        <tr>
+          <td>Пн</td>
+          <td>Київ</td>
+          <td>+2&nbsp;°C</td>
+          <td>Невеликий дощ</td>
+          <td>5&nbsp;м/с</td>
+        </tr>
+        <tr>
+          <td>Вт</td>
+          <td>Львів</td>
+          <td>0&nbsp;°C</td>
+          <td>Хмарно</td>
+          <td>3&nbsp;м/с</td>
+        </tr>
+        <tr>
+          <td>Ср</td>
+          <td>Одеса</td>
+          <td>+6&nbsp;°C</td>
+          <td>Без опадів</td>
+          <td>7&nbsp;м/с</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h3>Форма для пошуку</h3>
+      <form action="search-results.html" method="get">
+        <p>
+          <label for="q">Запит:</label><br>
+          <input type="text" id="q" name="q" size="40" maxlength="60">
+        </p>
+
+        <p>
+          <label for="section">Розділ:</label><br>
+          <select id="section" name="section">
+            <option value="materials">Матеріали</option>
+            <option value="news">Новини</option>
+            <option value="schedule">Розклад</option>
+            <option value="teachers">Викладачі</option>
+          </select>
+        </p>
+
+        <p>
+          Тип пошуку:<br>
+          <input type="radio" id="fast" name="mode" value="fast" checked>
+          <label for="fast">Швидкий</label><br>
+          <input type="radio" id="exact" name="mode" value="exact">
+          <label for="exact">Точний</label>
+        </p>
+
+        <p>
+          Додатково:<br>
+          <input type="checkbox" id="titleOnly" name="titleOnly" value="1">
+          <label for="titleOnly">Шукати лише в заголовках</label><br>
+          <input type="checkbox" id="withFiles" name="withFiles" value="1">
+          <label for="withFiles">Показати матеріали з файлами</label>
+        </p>
+
+        <p>
+          <label for="comment">Коментар (необов’язково):</label><br>
+          <textarea id="comment" name="comment" rows="4" cols="45"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Шукати">
+          <input type="reset" value="Очистити">
+        </p>
+      </form>
+
+      <hr>
+
+      <p>
+        Повернутися на <a href="index.html">головну</a>.
+      </p>
+    </td>
+  </tr>
+
+  <!-- Підвал -->
+  <tr>
+    <td colspan="2" align="center">
+      <p>&copy; Лабораторна робота 1</p>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
