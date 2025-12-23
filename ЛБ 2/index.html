@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 2</title>
+
+  <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5dc;
+                margin: 0;
+                padding: 20px;
+            }
+
+            header {
+                background-color: #8B0000;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+    
+            .floating-box {
+                float: left;
+                width: 200px;
+                height: 150px;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid #8B0000;
+                background-color: #ffe4b5;
+            }
+    
+            .positioned-box {
+                position: absolute;
+                top: 129px;
+                left: 510px;
+                width: 200px;
+                background-color: #ffa07a;
+                padding: 10px;
+                border: 1px solid #8B0000;
+            }
+        </style>
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 style="font-size: 2rem; font-weight: bold;">Лабораторна робота 2</h1>
+        </header>
+    
+        <section>    
+            <div class="floating-box">
+                <h3>Навігація</h3>
+                <ul>
+                    <li><a href="#" style="color: #8B0000;">Головна</a></li> 
+                    <li><a href="#" style="color: #8B0000;">Про нас</a></li>
+                    <li><a href="#" style="color: #8B0000;">Контакти</a></li>
+                </ul>
+            </div>
+    
+            <div class="floating-box">
+                <h3>Інформація</h3>
+                <p>Блоки з використанням властивості float для вирівнювання по горизонталі.</p>
+            </div>
+    
+            <div class="positioned-box">
+                <h3>Абсолютне позиціонування</h3>
+                <p>Цей елемент позиціонується відносно батьківського контейнера.</p>
+            </div>
+    
+            <img src="img.jpg" alt="Зображення" class="responsive-image">
+        </section>
+        
+        <section>
+            <table class="centered-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ИТех</td>
+                        <td>93</td>
+                        <td>97</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>КСх</td>
+                        <td>91</td>
+                        <td>98</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>СПО</td>
+                        <td>96</td>
+                        <td>94</td>
+                        <td>97</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+</body>
+</html>

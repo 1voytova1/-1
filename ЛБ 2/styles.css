@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .responsive-image {
+        width: 600px;
+    }
+}
+
+@media (max-width: 800px) {
+    .responsive-image {
+        width: 400px;
+    }
+}
+
+/* Стилі для таблиці */
+.centered-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+
+.centered-table th,
+.centered-table td {
+    border: 1px solid #8B0000;
+    padding: 10px;
+}
+
+.centered-table th {
+    background-color: #8B0000;
+    color: #FFF;
+}
+
+.centered-table tr:nth-child(even) {
+    background-color: #FDF5E6;
+}
+
+.centered-table tr:hover {
+    background-color: #FFDAB9;
+}
+
+/* Динамічне зображення */
+.responsive-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
